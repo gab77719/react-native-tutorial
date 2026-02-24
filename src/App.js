@@ -39,6 +39,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
   },
   content: {
-    padding: 200,
+    padding: 20,
   }
 });
