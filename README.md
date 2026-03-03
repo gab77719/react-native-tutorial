@@ -8,11 +8,19 @@
 - O que é o React Native?
 - O que é o Expo?
 - Como estilizar um componente no React Native?
-- O estilo no React Native é igual ao CSS? Tenho todas as propriedades?
+- O estilo CSS in JS no React Native é igual ao CSS? Tenho todas as propriedades?
+- Em quais pacotes encontro um componente de Imagem? Qual melhor para usarmos atualmente?
+- O que são propriedades de componentes?
+
+Extra 
+
+- Revisão de variáveis e objetos
+    - desestruturação de objetos
 
 ## Comandos Uteis
 
 // Como instalar o React Native com Expo?
+
 npx create-expo -app@latest --template
 
 

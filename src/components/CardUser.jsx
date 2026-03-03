@@ -3,11 +3,11 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 export default function CardUser({ nome, email, foto }) {
   return (
     <View style={styles.card}>
-      <Image source={{ uri: foto }} style={styles.avatar} />
+      <Image source={{ uri: {foto} }} style={styles.avatar} />
       <View>
         <Text style={styles.nome}>{nome}</Text>
         <Text style={styles.email}>{email}</Text>
-      </View>
+      </View> 
     </View>
   );
 }
