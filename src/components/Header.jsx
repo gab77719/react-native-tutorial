@@ -1,42 +1,30 @@
-import { View, Text, StyleSheet, Image } from 'react-native';
-import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
-import AntDesign from '@expo/vector-icons/AntDesign';
+import {View, Text, StyleSheet} from 'react-native'
+import FontAwesome from '@expo/vector-icons/FontAwesome'
 
-export default function Header() {
+export default function Header(){
     return (
         <View style={styles.container}>
-            <MaterialCommunityIcons style={styles.logo} name="car" size={26} color="#ffffff" />
-            <AntDesign style={styles.menu} name="menu" size={24}/>
-            <Text style={styles.nome}>Motors Web</Text>
+            <FontAwesome style={styles.logo} name="users" size={26} color="#e7612b" />
+            <Text style={styles.logotipo}>Logo</Text>
         </View>
-    )   
+    )
 }
 
-const styles = StyleSheet.create({      
+const styles = StyleSheet.create({ // CSS in JS
     container: {
-        backgroundColor: '#ff0000',
-        width: '100%',
-        height: 80,
-        flexDirection: 'row',
-        justifyContent: 'space-evenly', 
-        alignItems: 'center',
+        flexDirection: "row",
+        backgroundColor: "#000000",
+        width: "100%",
+        height: 46,
+        marginBottom: 16,
+        alignItems: "center",
+        paddingHorizontal: 16
+        //justifyContent: "center",
     },
-    logo: {
-        width: 80,
-        height: 30,
-        resizeMode: 'contain',
-        marginInline: 20,
-    },      
-    nome: {
-        color: '#eeeeeee3',
-        fontSize: 20,
-        fontWeight: 'bold',
-        justifyContent: '',  
-        marginRight: 'auto',  
+    logo:{
+        marginRight: 14
     },
-    menu: {
-        marginRight: 0,
-        color: '#ffffff',
-        left: 200,  
-    },
-}); 
+    logotipo: {
+        color: "#FFF"
+    }
+})
