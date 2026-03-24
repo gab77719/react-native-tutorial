@@ -1,4 +1,4 @@
-# 📚 Resumo - React Native
+# 📚 Resumo - React Native (Simples)
 
 ## 📌 Linguagem utilizada
 
@@ -8,132 +8,113 @@ JavaScript (ou TypeScript)
 
 ## 📌 Node.js
 
-Ambiente que permite executar JavaScript fora do navegador (backend).
+Permite rodar JavaScript fora do navegador (no backend).
 
 ---
 
 ## 📌 Framework vs Biblioteca
 
-* **Framework**: dita a estrutura do projeto
-* **Biblioteca**: você usa quando quiser
+* **Framework**: já define como o projeto deve ser feito
+* **Biblioteca**: você usa só quando precisa
 
-👉 Framework controla você | Biblioteca você controla
+👉 Framework manda | Biblioteca você decide
 
 ---
 
 ## 📌 NPM
 
-Gerenciador de pacotes do Node.js
-
-Funções:
-
-* Instalar dependências
-* Gerenciar pacotes
-* Rodar scripts
+Ferramenta para instalar e gerenciar pacotes do Node
 
 ---
 
 ## 📌 React
 
-Biblioteca JavaScript para criação de interfaces (UI) baseada em componentes.
+Biblioteca para criar telas (interfaces) com componentes
 
 ---
 
 ## 📌 React Native
 
-Permite criar aplicativos mobile (Android/iOS) usando JavaScript.
+Usa React para criar apps mobile (Android e iOS)
 
 ---
 
 ## 📌 Expo
 
-Ferramenta que facilita o uso do React Native sem configurações complexas.
+Facilita criar apps em React Native sem configuração complicada
 
 ---
 
-## 📌 Estilização no React Native
+## 📌 Estilização
 
-Utiliza **StyleSheet (CSS in JS)**:
+Usa JavaScript para estilizar:
 
 ```js
-const styles = StyleSheet.create({
+const styles = {
   container: {
-    backgroundColor: '#fff',
-    padding: 10
+    backgroundColor: '#fff'
   }
-})
+}
 ```
 
 ---
 
 ## 📌 CSS no React Native
 
-Não é igual ao CSS tradicional:
+Não é igual ao CSS da web:
 
-* Não usa `px`, `em`
-* Nem todas propriedades existem
-* Usa camelCase
+* Não usa px
+* Algumas coisas não existem
+* Usa camelCase (backgroundColor)
 
 ---
 
-## 📌 Componente de Imagem
+## 📌 Imagem
 
 ```js
 import { Image } from 'react-native'
 ```
 
-👉 Recomendado: `Image` padrão ou `expo-image`
-
 ---
 
-## 📌 Props (Propriedades)
+## 📌 Props
 
-Dados passados para componentes:
+São dados passados para componentes
 
 ```js
-<CardUser nome="Gab" email="gab@email.com" />
+<CardUser nome="Gab" />
 ```
 
 ---
 
 ## 📌 Hooks
 
-Funções do React para controlar estado e ciclo de vida.
-
-Exemplos:
-
-* useState
-* useEffect
+Funções do React para controlar coisas do componente
 
 ---
 
 ## 📌 useState
 
-Controla estado do componente:
+Guarda e muda valores
 
 ```js
-const [contador, setContador] = useState(0)
+const [valor, setValor] = useState(0)
 ```
-
-* contador: valor atual
-* setContador: atualiza o valor
 
 ---
 
 ## 📌 useEffect
 
-Executa efeitos colaterais:
+Executa algo automaticamente (ex: quando abre a tela)
 
 ```js
 useEffect(() => {
-  console.log('executou')
+  console.log('rodou')
 }, [])
 ```
 
-* `[]` executa apenas na montagem
-
 ---
 
-## 🚀 Resumo Geral
+## 🚀 Resumo geral
 
-React Native usa JavaScript para criar apps mobile, com componentes, props e hooks como base do desenvolvimento.
+React Native = usar JavaScript para criar apps mobile de forma mais simples
