@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, Button } from 'react-native'
-import { TextInput } from 'react-native-web'
+import { TextInput } from 'react-native'
 import { useState } from 'react'
 
 export default function FormSignUp() {

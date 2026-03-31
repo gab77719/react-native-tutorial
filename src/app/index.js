@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, View, Text } from 'react-native';
-import Header from './components/Header';
-import CardUser from './components/CardUser';
+import Header from '../components/Header';
+import CardUser from '../components/CardUser';
 import { useEffect, useState } from 'react';
 
 export default function Home() {
