@@ -1,120 +1,43 @@
-# 📚 Resumo - React Native (Simples)
+# Tópicos Importantes
 
-## 📌 Linguagem utilizada
+- Qual a linguagem de programação utilizada na disciplina?
+Javascript ou Typescript.
 
-JavaScript (ou TypeScript)
+- O que é o Node?
+Forma de rodar o javascript no navegador.
 
----
+- O que é Framework e qual a diferença para uma biblioteca?
+Estrutura 
+Framework é 
+- O que é o NPM?
+- O que é React?
+- O que é o React Native?
+- O que é o Expo?
+- Como estilizar um componente no React Native?
+- O estilo CSS in JS no React Native é igual ao CSS Web? Tenho todas as propriedades?
+- Em quais pacotes encontro um componente de Imagem? Qual melhor para usarmos atualmente?
+- O que são propriedades de componentes?
+- O que são Hooks?
+- Para que serve e como funciona o useState?
 
-## 📌 Node.js
+- Para que serve e como funciona o useEffect?
 
-Permite rodar JavaScript fora do navegador (no backend).
 
----
+- O que é Prop Drilling?
+Técnica do react onde um componente pai passa uma ou mais propriedades para o componente filho.
 
-## 📌 Framework vs Biblioteca
+Extra
 
-* **Framework**: já define como o projeto deve ser feito
-* **Biblioteca**: você usa só quando precisa
+- Variáveis e Objetos
+- Desestruturação de objetos
+- Arrays
+- Condição Ternária 
 
-👉 Framework manda | Biblioteca você decide
+## Comandos Uteis
 
----
+// Como instalar o React Native com Expo?
 
-## 📌 NPM
+npx create-expo-app@latest --template
 
-Ferramenta para instalar e gerenciar pacotes do Node
+### Expo
 
----
-
-## 📌 React
-
-Biblioteca para criar telas (interfaces) com componentes
-
----
-
-## 📌 React Native
-
-Usa React para criar apps mobile (Android e iOS)
-
----
-
-## 📌 Expo
-
-Facilita criar apps em React Native sem configuração complicada
-
----
-
-## 📌 Estilização
-
-Usa JavaScript para estilizar:
-
-```js
-const styles = {
-  container: {
-    backgroundColor: '#fff'
-  }
-}
-```
-
----
-
-## 📌 CSS no React Native
-
-Não é igual ao CSS da web:
-
-* Não usa px
-* Algumas coisas não existem
-* Usa camelCase (backgroundColor)
-
----
-
-## 📌 Imagem
-
-```js
-import { Image } from 'react-native'
-```
-
----
-
-## 📌 Props
-
-São dados passados para componentes
-
-```js
-<CardUser nome="Gab" />
-```
-
----
-
-## 📌 Hooks
-
-Funções do React para controlar coisas do componente
-
----
-
-## 📌 useState
-
-Guarda e muda valores
-
-```js
-const [valor, setValor] = useState(0)
-```
-
----
-
-## 📌 useEffect
-
-Executa algo automaticamente (ex: quando abre a tela)
-
-```js
-useEffect(() => {
-  console.log('rodou')
-}, [])
-```
-
----
-
-## 🚀 Resumo geral
-
-React Native = usar JavaScript para criar apps mobile de forma mais simples

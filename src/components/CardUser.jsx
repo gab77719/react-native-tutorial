@@ -1,10 +1,34 @@
 import { View, Text, StyleSheet, Image } from 'react-native';
+import FontAwesome from '@expo/vector-icons/FontAwesome';
 
-export default function CardUser({ avatar, name, email }) {
+export default function CardUser({ avatar, name, email, id, users, setUsers }) {
+
+  const handleDelete = async () => {
+    const response = await fetch(`http://localhost:3333/user/${id}`, {
+      method: 'DELETE'
+    });
+    const data = await response.json();
+    if (response.ok) {
+      console.log('Usuário deletado com sucesso', data);
+      const newUsers = users.filter(user => user.id !== id);
+      setUsers(newUsers);
+    } else {
+      console.log('Erro ao deletar usuário', data);
+    }
+  };
+
+
   return (
     <View style={styles.card}>
-      <Image source={{ uri: avatar }} style={styles.avatar} />
-      <View>
+      <Image source={{ uri: avatar }} style={styles.avatar} 
+      />
+
+      <View style={styles.actions}>
+        <FontAwesome name="edit" size={24} color="black" />
+        <FontAwesome name="trash-o" size={24} color="black" style={styles.trash} onPress={handleDelete} />
+      </View>
+
+      <View style={styles.info}>
         <Text style={styles.nome}>{name}</Text>
         <Text style={styles.email}>{email}</Text>
       </View> 
@@ -26,6 +50,10 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
   },
 
+  info: { 
+    flex: 1,
+  },
+
   avatar: {
     width: 60,
     height: 60,
@@ -42,4 +70,17 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: 'gray',
   },
+
+  actions: {
+    position: 'absolute',
+    right: 10,
+    top: 10,
+    flexDirection: 'row',
+    gap: 14,
+
+  },
+
+  trash: {
+    marginBottom: 2
+  }
 });

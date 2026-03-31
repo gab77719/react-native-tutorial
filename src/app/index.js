@@ -4,7 +4,7 @@ import Header from './components/Header';
 import CardUser from './components/CardUser';
 import { useEffect, useState } from 'react';
 
-export default function App() {
+export default function Home() {
 
   const [users, setUsers] = useState([])
   const [isLoading, setLoading] = useState(true)
@@ -28,14 +28,17 @@ export default function App() {
   return (
       <View style={styles.container}>
         <Header />
-
+       
 
         {isLoading ? <Text>Carregando...</Text> : users.map(user => (
           <CardUser 
             key={user.id}
+            id={user.id}
             avatar={user.avatar}
             name={user.name}
             email={user.email}
+            users={users}
+            setUsers={setUsers}
           />
         ))
             }
